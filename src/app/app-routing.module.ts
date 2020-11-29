@@ -14,6 +14,16 @@ const routes: Routes = [
         (m) => m.ContactModule
       ),
   },
+  {
+    path: '',
+    pathMatch: 'full',
+    redirectTo: 'home',
+  },
+  {
+    path: '**',
+    pathMatch: 'full',
+    redirectTo: 'home',
+  },
 ];
 
 @NgModule({
