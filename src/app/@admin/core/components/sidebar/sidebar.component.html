@@ -1,11 +1,13 @@
-<div class="bg-light border-right" id="sidebar-wrapper">
-  <div class="sidebar-heading">Gamezonia</div>
+<div class="border-right" id="sidebar-wrapper">
+  <div class="sidebar-heading">
+    <a [routerLink]="['/home']" routerLinkActive="router-link-active" >Gamezonia</a>
+  </div>
   <div class="list-group list-group-flush">
-    <a href="#" class="list-group-item list-group-item-action bg-light"
-      >Dashboard</a
+    <a [routerLink]="['/admin']" routerLinkActive="router-link-active"  class="list-group-item list-group-item-action links-bg"
+      > <i class="fas fa-columns mr-2"></i> Dashboard</a
     >
-    <a href="#" class="list-group-item list-group-item-action bg-light"
-      >Users</a
+    <a [routerLink]="['/admin/users']" routerLinkActive="router-link-active"  class="list-group-item list-group-item-action links-bg"
+      > <i class="fas fa-user-ninja mr-2"></i> Users</a
     >
   </div>
 </div>
