@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "mean-store"
+    }
+  },
+  "defaultProject": "mean-store",
+  "cli": {
+    "analytics": false
+  }
 }
